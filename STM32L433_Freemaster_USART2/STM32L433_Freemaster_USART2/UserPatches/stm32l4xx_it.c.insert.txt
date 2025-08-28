@@ -1,0 +1,8 @@
+/* === Insert into Core/Src/stm32l4xx_it.c (USER CODE section) === */
+#include "freemaster.h"
+#include "freemaster_cfg.h"
+
+void USART2_IRQHandler(void)
+{
+    FMSTR_SerialIsr();
+}
